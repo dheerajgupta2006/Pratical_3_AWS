@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     tools {
-        jdk 'JDK_HOME'
-        maven 'MAVEN_HOME'
-    }
+    jdk 'java17'
+    maven 'maven3'
+}
+
 
     environment {
         BACKEND_DIR = 'crud_backend/crud_backend-main'
